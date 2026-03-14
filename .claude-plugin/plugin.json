@@ -1,0 +1,51 @@
+{
+  "name": "monorepo-manager",
+  "version": "1.0.0",
+  "description": "Monorepo workflow management tool for Claude Code. Supports Turborepo, Nx, pnpm workspaces, Yarn workspaces, and Lerna.",
+  "author": "jojaeyong",
+  "skills": [
+    {
+      "name": "monorepo",
+      "path": "skills/monorepo/SKILL.md",
+      "triggers": [
+        "monorepo",
+        "workspace",
+        "turborepo",
+        "nx",
+        "pnpm workspace",
+        "yarn workspace",
+        "lerna",
+        "affected packages",
+        "dependency graph",
+        "cross-package",
+        "shared config",
+        "build order",
+        "package publishing"
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "workspace-add",
+      "path": "commands/workspace-add.md",
+      "description": "Add a new package or app to the monorepo with proper configuration"
+    },
+    {
+      "name": "affected",
+      "path": "commands/affected.md",
+      "description": "Analyze affected packages from recent changes"
+    }
+  ],
+  "agents": [
+    {
+      "name": "workspace-analyzer",
+      "path": "agents/workspace-analyzer.md",
+      "description": "Scan monorepo structure, map packages and their relationships"
+    },
+    {
+      "name": "dependency-graph",
+      "path": "agents/dependency-graph.md",
+      "description": "Build and visualize cross-package dependency graph, detect circular dependencies"
+    }
+  ]
+}
