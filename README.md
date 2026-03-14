@@ -29,9 +29,18 @@
 
 ## 설치
 
+프로젝트의 `.claude/plugins/` 디렉토리에 clone합니다:
+
 ```bash
-cp -r monorepo-manager .claude/plugins/monorepo-manager
+git clone https://github.com/wowoyong/claude-plugin-monorepo-manager.git .claude/plugins/monorepo-manager
 ```
+
+### 업데이트
+
+```bash
+cd .claude/plugins/monorepo-manager && git pull
+```
+
 
 ## 사용법
 
